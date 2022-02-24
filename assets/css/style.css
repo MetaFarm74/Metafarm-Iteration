@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ef6603;
+  background: #b887f8;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -1173,15 +1173,15 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: #141516;
 }
 .contact .info i {
   font-size: 20px;
-  color: #ef6603;
+  color: #f7f7f7;
   float: left;
   width: 44px;
   height: 44px;
-  background: #ffecde;
+  background: #b887f8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1199,7 +1199,7 @@ section {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #555974;
+  color: #fff;
 }
 .contact .info .email, .contact .info .phone {
   margin-top: 40px;
@@ -1210,7 +1210,7 @@ section {
 }
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: #141516;
 }
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
@@ -1264,7 +1264,7 @@ section {
   padding: 10px 12px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #ef6603;
+  background: #b887f8;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1370,7 +1370,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #ef6603;
+  background: #b887f8;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
