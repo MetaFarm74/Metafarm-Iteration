@@ -45,12 +45,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: #b887f8;
   line-height: 0;
 }
 .back-to-top:hover {
   background: #fc7c1f;
-  color: #fff;
+  color: #b887f8;
 }
 .back-to-top.active {
   visibility: visible;
@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  background: #ef6603;
+  background: #b887f8;
 }
 .navbar .dropdown ul {
   display: block;
@@ -339,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #ef6603;
+  border: 2px solid #b887f8;
 }
 #hero .btn-get-started:hover {
   background: #ef6603;
@@ -467,7 +467,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #fd9042;
+  background: #b887f8;
   margin: 4px 10px;
 }
 .section-title p {
@@ -522,14 +522,14 @@ section {
   border-radius: 5px;
   transition: 0.3s;
   line-height: 1;
-  color: #ef6603;
+  color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   margin-top: 6px;
-  border: 2px solid #ef6603;
+  border: 2px solid #b887f8;
 }
 .about .content .btn-learn-more:hover {
-  background: #ef6603;
+  background: #b887f8;
   color: #fff;
   text-decoration: none;
 }
@@ -742,10 +742,10 @@ section {
   transition: all 0.3s ease-in-out;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #ef6603;
+  color: #b887f8;
 }
 .portfolio #portfolio-flters li.filter-active::before, .portfolio #portfolio-flters li.filter-active::after {
-  color: #ef6603;
+  color: #b887f8;
 }
 .portfolio .portfolio-item {
   margin-bottom: 30px;
@@ -932,10 +932,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #ef6603;
+  border: 1px solid #fff;
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ef6603;
+  background-color: #b887f8;
 }
 
 /*--------------------------------------------------------------
@@ -1003,7 +1003,7 @@ section {
   text-align: center;
 }
 .pricing .btn-buy {
-  background: #ef6603;
+  background: #b887f8;
   display: inline-block;
   padding: 8px 35px 10px 35px;
   border-radius: 50px;
@@ -1023,7 +1023,7 @@ section {
 }
 .pricing .featured h3 {
   color: #fff;
-  background: #ef6603;
+  background: #b887f8;
 }
 .pricing .advanced {
   width: 200px;
@@ -1034,7 +1034,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #ef6603;
+  background: #b887f8;
   color: #fff;
 }
 
@@ -1128,7 +1128,7 @@ section {
   border-radius: 50px;
   width: 36px;
   height: 36px;
-  background: rgba(239, 102, 3, 0.8);
+  background: #b887f8;
   transition: ease-in-out 0.3s;
   color: #fff;
   display: inline-flex;
