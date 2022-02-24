@@ -537,6 +537,139 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+@use "sass:list";
+@use "sass:math";
+
+$inner-perspective: 150px;
+$outer-perspective: 500px;
+$size: 400px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  overflow: hidden;
+  color: #fff;
+  font-family: Consolas, monospace;
+}
+
+#scene {
+  perspective: $outer-perspective;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: perspective 1s ease-in-out;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#scene * {
+  transform-style: preserve-3d;
+  position: absolute;
+}
+
+#sphere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  animation: rotate-around 40s linear infinite;
+
+  @keyframes rotate-around {
+    0% {
+      transform: rotateX(-20deg) rotateY(0deg);
+    }
+    10% {
+      transform: rotateX(-20deg) rotateY(36deg);
+    }
+    50% {
+      transform: rotateX(-70deg) rotateY(180deg);
+    }
+    60% {
+      transform: rotateX(-70deg) rotateY(216deg);
+    }
+    100% {
+      transform: rotateX(-20deg) rotateY(360deg);
+    }
+  }
+
+  .longitudes,
+  .latitudes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .longitude,
+  .latitude {
+    border-radius: 50%;
+    border: 5px solid;
+    aspect-ratio: 1 / 1;
+  }
+
+  .longitude {
+    border-color: #0f0a;
+    width: $size;
+  }
+
+  .latitude {
+    border-color: #0ffa;
+  }
+
+  $count: 18;
+
+  @for $i from 0 through $count {
+    .longitude:nth-child(#{$i + 1}) {
+      transform: rotateY(#{$i / $count * 180}deg);
+    }
+  }
+
+  @for $i from 0 through $count {
+    $angle: ($i / $count - 0.5) * math.$pi;
+    $offset: math.sin($angle) * 0.5 * $size;
+    $dim: math.cos($angle) * $size;
+    .latitude:nth-child(#{$i + 1}) {
+      width: $dim;
+      transform: translateY($offset) rotateX(90deg);
+    }
+  }
+}
+
+label {
+  position: fixed;
+  margin: 15px;
+  display: inline-block;
+  background-color: #444;
+  box-shadow: 0px 0px 10px #111a;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 18px;
+  z-index: 10;
+  opacity: 0.8;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+input {
+  display: none;
+
+  &:checked ~ #scene {
+    perspective: $inner-perspective;
+  }
+
+  &:not(:checked) ~ #scene {
+    perspective: $outer-perspective;
+  }
+}
 .features .nav-tabs {
   border: 0;
 }
