@@ -45,11 +45,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .back-to-top i {
   font-size: 28px;
-  color: #b887f8;
+  color: #ffffff;
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #fc7c1f;
+  background: #b887f8;
   color: #b887f8;
 }
 .back-to-top.active {
@@ -342,7 +342,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #b887f8;
 }
 #hero .btn-get-started:hover {
-  background: #ef6603;
+  background: #b887f8;
   color: #fff;
   text-decoration: none;
 }
