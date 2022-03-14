@@ -49,8 +49,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #b887f8;
-  color: #b887f8;
+  background: #b306fcde;
+  color: #b306fcde;
 }
 .back-to-top.active {
   visibility: visible;
@@ -1015,7 +1015,7 @@ section {
   transition: 0.3s;
 }
 .pricing .btn-buy:hover {
-  background: #fc8129;
+  background: #b306fcde;
 }
 .pricing .featured {
   border: 2px solid #ef6603;
