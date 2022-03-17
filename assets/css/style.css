@@ -1125,11 +1125,10 @@ a {
   background: #b306fcde;
 }
 .pricing .featured {
-  border: 2px solid #ef6603;
+  border: 2px solid #4994ef;
 }
 .pricing .featured h3 {
   color: #fff;
-  background: #b887f8;
 }
 .pricing .advanced {
   width: 200px;
@@ -1203,7 +1202,6 @@ a {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
   padding: 60px 0;
 }
 .team .member {
@@ -1279,7 +1277,6 @@ a {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #141516;
 }
 .contact .info i {
   font-size: 20px;
@@ -1316,7 +1313,6 @@ a {
 }
 .contact .php-email-form {
   width: 100%;
-  background: #141516;
 }
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
@@ -1449,8 +1445,7 @@ a {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #14151c;
-  color: #fff;
+  color: #b887f8;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -1458,7 +1453,7 @@ a {
 #footer h3 {
   font-size: 36px;
   font-weight: 700;
-  color: #fff;
+  color:#b887f8;
   position: relative;
   font-family: "Poppins", sans-serif;
   padding: 0;
